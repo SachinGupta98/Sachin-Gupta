@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Gupta | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-shape circle-1"></div>
+    <div class="bg-shape circle-2"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Sachin<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience & Ed</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="btn btn-secondary theme-toggle-btn" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-padding">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <p class="greeting">Hello, world! I am</p>
+                    <h1 class="name">Sachin Gupta</h1>
+                    <h2 class="role">I'm a <span class="typing-text"></span><span class="cursor-blink">|</span></h2>
+                    <p class="summary">
+                        B.Tech Computer Science student with a strong interest in software development, AI, data science, and cloud security. Highly focused on continuous learning and crafting real-world solutions.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/sachin-gupta-singlecode" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/SachinGupta98" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:sachingupta9863@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper reveal right">
+                    <div class="image-border">
+                        <!-- Please ensure your image is saved as 'sachin-photo.jpg' in the same folder -->
+                        <img src="sachin-photo.jpg" alt="Sachin Gupta" class="hero-img" onerror="this.src='https://via.placeholder.com/400x500/1e1e1e/00f2fe?text=Sachin+Photo'">
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container reveal">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am currently exploring the vast domain of computer science with an emphasis on Artificial Intelligence, Data Science, and Software Development. Based in Jaipur, India, my mission is to continuously absorb knowledge and apply it practically to real-world challenges.</p>
+                        <p>I thrive on understanding core technical concepts while actively diving deep into Cloud Computing and Cybersecurity. Whether it's crafting scalable systems, exploring Generative AI, or analyzing data, I am passionate about technological innovation.</p>
+                    </div>
+                    <div class="skills-container">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Programming</h4>
+                                <div class="skill-tags">
+                                    <span>C</span><span>Python</span><span>Basic SQL</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Core Concepts</h4>
+                                <div class="skill-tags">
+                                    <span>Data Structures</span><span>Computer Networks</span><span>Operating Systems</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Cloud & Security</h4>
+                                <div class="skill-tags">
+                                    <span>Cloud Computing</span><span>Cybersecurity</span><span>Network Security</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Tools</h4>
+                                <div class="skill-tags">
+                                    <span>Google Cloud Platform</span><span>Google Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="timeline-section section-padding">
+            <div class="container reveal">
+                <h2 class="section-title">Journey & <span>Milestones</span></h2>
+                
+                <div class="timeline-wrapper">
+                    <div class="timeline">
+                        <!-- Education 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card hover-glow">
+                                <span class="timeline-date">Aug 2025 - Aug 2029</span>
+                                <h3>B.Tech, Computer Science & Engineering</h3>
+                                <h4>Poornima University, Jaipur</h4>
+                                <p>Pursuing comprehensive foundational knowledge and practical expertise in software engineering and modern computing technologies.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Experience 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card hover-glow">
+                                <span class="timeline-date">Present</span>
+                                <h3>Student & Self-Learner</h3>
+                                <h4>Jaipur, India</h4>
+                                <p>Studying core subjects like programming, data structures, and networking. Completing hands-on labs in cloud computing/cybersecurity and building AI/data science projects.</p>
+                            </div>
+                        </div>
+
+                        <!-- Certification 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card hover-glow">
+                                <span class="timeline-date">Certification</span>
+                                <h3>Google Cloud Cybersecurity</h3>
+                                <h4>Coursera / Google</h4>
+                                <p>Learned security fundamentals, cloud infrastructure security, and incident response mechanisms.</p>
+                            </div>
+                        </div>
+
+                        <!-- Certification 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card hover-glow">
+                                <span class="timeline-date">Certification</span>
+                                <h3>Career Essentials in Generative AI</h3>
+                                <h4>Microsoft & LinkedIn</h4>
+                                <p>Gained foundational knowledge of generative AI concepts and diverse real-world applications.</p>
+                            </div>
+                        </div>
+
+                        <!-- Certification 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card hover-glow">
+                                <span class="timeline-date">Certification</span>
+                                <h3>Google Analytics</h3>
+                                <h4>Google</h4>
+                                <p>Developed a deep understanding of data analysis and digital analytics fundamentals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="container reveal">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card">
+                        <div class="project-img-wrapper">
+                            <img src="finpal.png" alt="Finpal-Ai Financial Calculator" onerror="this.src='https://via.placeholder.com/600x400/1e1e1e/00f2fe?text=Finpal-AI'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/SachinGupta98/Financial-Calculator" target="_blank" class="icon-link" aria-label="GitHub Code"><i class="fab fa-github"></i> Code</a>
+                                    <a href="https://financial-calculator-1hwz.onrender.com/" target="_blank" class="icon-link" aria-label="Live Site"><i class="fas fa-external-link-alt"></i> Live</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Finpal-AI Financial Calculator</h3>
+                            <p>An intelligent financial calculator powered by deep AI capabilities designed to provide accurate insights and comprehensive data.</p>
+                            <div class="project-tags">
+                                <span>AI</span><span>Web</span><span>Finance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card">
+                        <div class="project-img-wrapper">
+                            <img src="study-assistant.png" alt="Study Assistant" onerror="this.src='https://via.placeholder.com/600x400/1e1e1e/00f2fe?text=Study+Assistant'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/SachinGupta98/Ai-Study-friend" target="_blank" class="icon-link" aria-label="GitHub Code"><i class="fab fa-github"></i> Code</a>
+                                    <a href="https://ai-study-friend.onrender.com/" target="_blank" class="icon-link" aria-label="Live Site"><i class="fas fa-external-link-alt"></i> Live</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>AI Study Assistant</h3>
+                            <p>Your intelligent study companion. Helps organize schedules, track progress, and provides AI-driven learning assistance to maximize productivity.</p>
+                            <div class="project-tags">
+                                <span>AI</span><span>Education</span><span>Productivity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container reveal">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info glass-card">
+                        <h3>Connect with Me</h3>
+                        <p>I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                        <ul class="contact-list">
+                            <li><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan, India</li>
+                            <li><i class="fas fa-phone-alt"></i> +91 9352504829</li>
+                            <li><i class="fas fa-envelope"></i> sachingupta9863@gmail.com</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="contact-form-wrapper glass-card">
+                        <form id="contact-form">
+                            <div class="input-group">
+                                <input type="text" id="user_name" name="user_name" required placeholder=" ">
+                                <label for="user_name">Your Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="user_email" name="user_email" required placeholder=" ">
+                                <label for="user_email">Your Email</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                            <p id="form-msg" class="form-message"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Sachin Gupta. Designed with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
